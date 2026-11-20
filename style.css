@@ -1,0 +1,35 @@
+:root{color-scheme:dark;font:100% system-ui,sans-serif;background:#101e25;color:#eef7f6;--panel:#192c34;--line:#36515a;--muted:#a8c1c5;--mint:#83ebcc}
+*{box-sizing:border-box}
+body{margin:0}
+main{max-width:720px;margin:auto;padding:calc(25px + env(safe-area-inset-top)) max(18px,env(safe-area-inset-right)) calc(25px + env(safe-area-inset-bottom)) max(18px,env(safe-area-inset-left))}
+header,.brand,.actions{display:flex;align-items:center;gap:12px}
+header{justify-content:space-between;flex-wrap:wrap;margin-bottom:20px}
+.brand img{border-radius:13px}
+h1{font-size:1.65rem;margin:0}
+h2{font-size:1.15rem;margin:18px 0 9px}
+input,button{font:inherit;color:inherit}
+input:not([type=checkbox]),button{border:1px solid var(--line);border-radius:12px;background:var(--panel);min-height:44px;padding:9px 12px}
+input:not([type=checkbox]){width:100%}
+button{cursor:pointer;font-size:.9rem;font-weight:650}
+button.primary{background:var(--mint);border-color:var(--mint);color:#102922}
+article{display:flex;align-items:center;gap:4px;border:1px solid var(--line);border-radius:15px;background:var(--panel);margin-bottom:8px;padding:4px}
+article a{display:flex;flex:1;align-items:center;gap:10px;text-decoration:none;color:inherit;min-width:0;min-height:60px;padding:8px}
+.details{min-width:0}
+.details strong,.details small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.details small, label span{color:var(--muted)}
+.mark{width:36px;height:36px;flex:none;border-radius:11px;color:var(--mint);background:#27474b;display:grid;place-items:center}
+article button{padding-inline:8px;min-width:44px;border:0}
+.star[aria-pressed=true]{color:var(--mint)}
+.empty{border:1px dashed var(--line);border-radius:16px;padding:36px 18px;margin-top:16px;text-align:center;color:var(--muted)}
+.empty p{margin:0}
+#notice,#error{color:#ffd0bc}
+dialog{width:min(92vw,450px);border:1px solid var(--line);border-radius:20px;background:#172930;color:inherit;padding:20px}
+dialog::backdrop{background:#000a}
+form h2{margin:0 0 14px}
+label{display:block;margin:12px 0}
+label input:not([type=checkbox]){display:block;margin-top:6px}
+.check{display:flex;align-items:center;min-height:44px;gap:8px}
+.check input{width:20px;height:20px;accent-color:var(--mint)}
+.actions{justify-content:flex-end;flex-wrap:wrap}
+.danger{margin-right:auto;color:#ffc0af}
+:focus-visible{outline:2px solid var(--mint);outline-offset:2px}
